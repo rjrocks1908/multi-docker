@@ -16,12 +16,12 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_TOKEN }} # Use PAT instead of password
 
-      - run: docker build -t rallycoding/multi-client ./client
-      - run: docker build -t rallycoding/multi-nginx ./nginx
-      - run: docker build -t rallycoding/multi-server ./server
-      - run: docker build -t rallycoding/multi-worker ./worker
+      - run: docker build -t haxon/multi-client ./client
+      - run: docker build -t haxon/multi-nginx ./nginx
+      - run: docker build -t haxon/multi-server ./server
+      - run: docker build -t haxon/multi-worker ./worker
 
-      - run: docker push rallycoding/multi-client
-      - run: docker push rallycoding/multi-nginx
-      - run: docker push rallycoding/multi-server
-      - run: docker push rallycoding/multi-worker
+      - run: docker push haxon/multi-client
+      - run: docker push haxon/multi-nginx
+      - run: docker push haxon/multi-server
+      - run: docker push haxon/multi-worker
