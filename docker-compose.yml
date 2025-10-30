@@ -4,7 +4,7 @@ services:
     image: "haxon/multi-client"
     mem_limit: 128m
     hostname: client
-  server:
+  api:
     image: "haxon/multi-server"
     mem_limit: 128m
     hostname: api
