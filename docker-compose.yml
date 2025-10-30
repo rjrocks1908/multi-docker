@@ -26,7 +26,7 @@ services:
   nginx:
     depends_on:
       - client
-      - server
+      - api
     image: "haxon/multi-nginx"
     mem_limit: 128m
     hostname: nginx
